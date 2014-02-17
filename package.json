@@ -1,0 +1,45 @@
+{
+  "name": "broccoli-uncss",
+  "version": "0.0.0",
+  "description": "Remove unused CSS with UnCSS",
+  "license": "MIT",
+  "repository": "sindresorhus/broccoli-uncss",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "broccoli build temp && mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "broccoli-plugin",
+    "minimize",
+    "html",
+    "css",
+    "min",
+    "minify",
+    "optimize",
+    "compress",
+    "redundant",
+    "moot",
+    "remove"
+  ],
+  "dependencies": {
+    "broccoli-filter": "0.0.1",
+    "rsvp": "~3.0.4",
+    "uncss": "~0.7.8",
+    "object-assign": "~0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "broccoli": "~0.1.1",
+    "rimraf": "~2.2.6"
+  }
+}
