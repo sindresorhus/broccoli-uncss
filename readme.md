@@ -1,4 +1,4 @@
-# [broccoli](https://github.com/joliss/broccoli)-uncss [![Build Status](https://travis-ci.org/sindresorhus/broccoli-uncss.png?branch=master)](https://travis-ci.org/sindresorhus/broccoli-uncss)
+# [broccoli](https://github.com/joliss/broccoli)-uncss [![Build Status](https://travis-ci.org/sindresorhus/broccoli-uncss.svg?branch=master)](https://travis-ci.org/sindresorhus/broccoli-uncss)
 
 > Remove unused CSS with [UnCSS](https://github.com/giakki/uncss)
 
@@ -7,12 +7,12 @@
 
 ## Install
 
-```
-npm install --save broccoli-uncss
+```bash
+$ npm install --save broccoli-uncss
 ```
 
 
-## Example
+## Usage
 
 ```js
 var uncss = require('broccoli-uncss');
@@ -31,4 +31,4 @@ See the UnCSS [options](https://github.com/giakki/uncss#within-nodejs), except f
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
