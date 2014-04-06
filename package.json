@@ -32,14 +32,14 @@
     "remove"
   ],
   "dependencies": {
-    "broccoli-filter": "0.0.1",
-    "rsvp": "~3.0.4",
-    "uncss": "~0.7.8",
-    "object-assign": "~0.2.0"
+    "broccoli-filter": "^0.1.6",
+    "object-assign": "^0.2.0",
+    "rsvp": "^3.0.4",
+    "uncss": "^0.8.1"
   },
   "devDependencies": {
+    "broccoli": "^0.7.2",
     "mocha": "*",
-    "broccoli": "~0.1.1",
-    "rimraf": "~2.2.6"
+    "rimraf": "^2.2.6"
   }
 }
