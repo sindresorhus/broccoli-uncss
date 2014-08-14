@@ -7,7 +7,7 @@
 
 ## Install
 
-```bash
+```sh
 $ npm install --save broccoli-uncss
 ```
 
@@ -31,4 +31,4 @@ See the UnCSS [options](https://github.com/giakki/uncss#within-nodejs), except f
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)
