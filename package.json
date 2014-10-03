@@ -35,10 +35,10 @@
     "broccoli-filter": "^0.1.6",
     "object-assign": "^1.0.0",
     "rsvp": "^3.0.4",
-    "uncss": "^0.8.3"
+    "uncss": "^0.9.0"
   },
   "devDependencies": {
-    "broccoli": "^0.12.3",
+    "broccoli": "^0.13.0",
     "broccoli-cli": "0.0.1",
     "mocha": "*",
     "rimraf": "^2.2.6"
