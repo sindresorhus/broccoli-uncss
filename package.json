@@ -1,6 +1,6 @@
 {
   "name": "broccoli-uncss",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Remove unused CSS with UnCSS",
   "license": "MIT",
   "repository": "sindresorhus/broccoli-uncss",
