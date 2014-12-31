@@ -10,7 +10,7 @@ function UncssFilter(inputTree, options) {
 	}
 
 	this.inputTree = inputTree;
-	this.options = options || {};
+	this.options = assign({}, options);
 
 	if (!Array.isArray(this.options.html)) {
 		throw new Error('`html` option required');
@@ -27,11 +27,10 @@ UncssFilter.prototype.extensions = ['css'];
 UncssFilter.prototype.targetExtension = 'css';
 
 UncssFilter.prototype.processString = function (str) {
-	var options = assign({}, this.options);
-	options.raw = str;
+	this.options.raw = str;
 
 	return new RSVP.Promise(function(resolve, reject) {
-		uncss(this.html, options, function (err, data) {
+		uncss(this.html, this.options, function (err, data) {
 			if (err) {
 				return reject(err);
 			}
