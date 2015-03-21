@@ -7,8 +7,8 @@
 
 ## Install
 
-```sh
-$ npm install --save broccoli-uncss
+```
+$ npm install --save-dev broccoli-uncss
 ```
 
 
@@ -22,7 +22,7 @@ tree = uncss(tree, {html: ['index.html']});
 
 ## API
 
-### uncss(tree, options)
+### uncss(tree, [options])
 
 #### options
 
