@@ -9,6 +9,8 @@ function UncssFilter(inputTree, options) {
 		return new UncssFilter(inputTree, options);
 	}
 
+	Filter.call(this, inputTree);
+
 	this.inputTree = inputTree;
 	this.options = assign({}, options);
 
