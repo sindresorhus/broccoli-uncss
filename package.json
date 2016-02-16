@@ -35,7 +35,7 @@
     "broccoli-filter": "^1.2.2",
     "object-assign": "^4.0.1",
     "rsvp": "^3.0.4",
-    "uncss": "^0.12.0"
+    "uncss": "^0.13.0"
   },
   "devDependencies": {
     "broccoli": "^0.16.8",
