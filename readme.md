@@ -19,6 +19,14 @@ var uncss = require('broccoli-uncss');
 tree = uncss(tree, {html: ['index.html']});
 ```
 
+## HTML option
+
+The html option is mandatory, it is a list of the html files used to filter the CSS properties.
+
+Example:
+```
+tree = uncss(tree, {html: ['./index.html']});
+```
 
 ## API
 
