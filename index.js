@@ -19,7 +19,6 @@ function UncssFilter(inputTree, options) {
 	}
 
 	this.html = this.options.html;
-	delete this.options.html;
 }
 
 UncssFilter.prototype = Object.create(Filter.prototype);
