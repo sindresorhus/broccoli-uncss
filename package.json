@@ -34,11 +34,11 @@
   "dependencies": {
     "broccoli-filter": "^1.2.2",
     "object-assign": "^4.0.1",
-    "rsvp": "^3.0.4",
-    "uncss": "^0.13.0"
+    "rsvp": "^4.7.0",
+    "uncss": "^0.15.0"
   },
   "devDependencies": {
-    "broccoli": "^0.16.8",
+    "broccoli": "^1.1.3",
     "broccoli-cli": "^1.0.0",
     "mocha": "*",
     "rimraf": "^2.2.6"
