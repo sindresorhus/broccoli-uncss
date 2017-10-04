@@ -1,46 +1,46 @@
 {
-  "name": "broccoli-uncss",
-  "version": "1.6.0",
-  "description": "Remove unused CSS with UnCSS",
-  "license": "MIT",
-  "repository": "sindresorhus/broccoli-uncss",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "broccoli build temp && mocha"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "broccoli-plugin",
-    "minimize",
-    "html",
-    "css",
-    "min",
-    "minify",
-    "optimize",
-    "compress",
-    "redundant",
-    "moot",
-    "remove"
-  ],
-  "dependencies": {
-    "broccoli-filter": "^1.2.2",
-    "object-assign": "^4.0.1",
-    "rsvp": "^4.7.0",
-    "uncss": "^0.15.0"
-  },
-  "devDependencies": {
-    "broccoli": "^1.1.3",
-    "broccoli-cli": "^1.0.0",
-    "mocha": "*",
-    "rimraf": "^2.2.6"
-  }
+	"name": "broccoli-uncss",
+	"version": "1.6.0",
+	"description": "Remove unused CSS with UnCSS",
+	"license": "MIT",
+	"repository": "sindresorhus/broccoli-uncss",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && broccoli build temp && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"broccoli-plugin",
+		"minimize",
+		"html",
+		"css",
+		"min",
+		"minify",
+		"optimize",
+		"compress",
+		"redundant",
+		"moot",
+		"remove"
+	],
+	"dependencies": {
+		"broccoli-filter": "^1.2.2",
+		"pify": "^3.0.0",
+		"uncss": "^0.15.0"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"broccoli": "^1.1.3",
+		"broccoli-cli": "^1.0.0",
+		"del": "^3.0.0",
+		"xo": "*"
+	}
 }

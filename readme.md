@@ -15,7 +15,7 @@ $ npm install --save-dev broccoli-uncss
 ## Usage
 
 ```js
-var uncss = require('broccoli-uncss');
+const uncss = require('broccoli-uncss');
 tree = uncss(tree, {html: ['index.html']});
 ```
 
@@ -30,12 +30,12 @@ See the UnCSS [options](https://github.com/giakki/uncss#within-nodejs), except f
 
 ##### html
 
-*Required*  
-Type: `array`
+*Required*<br>
+Type: `Array`
 
 HTML files to use when matching what CSS selectors to filter out.
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

@@ -1,8 +1,7 @@
 'use strict';
-var Filter = require('broccoli-filter');
-var RSVP = require('rsvp');
-var assign = require('object-assign');
-var uncss = require('uncss');
+const Filter = require('broccoli-filter');
+const uncss = require('uncss');
+const pify = require('pify');
 
 function UncssFilter(inputTree, options) {
 	if (!(this instanceof UncssFilter)) {
@@ -12,10 +11,10 @@ function UncssFilter(inputTree, options) {
 	Filter.call(this, inputTree);
 
 	this.inputTree = inputTree;
-	this.options = assign({}, options);
+	this.options = Object.assign({}, options);
 
 	if (!Array.isArray(this.options.html)) {
-		throw new Error('`html` option required');
+		throw new TypeError('`html` option required');
 	}
 
 	this.html = this.options.html;
@@ -30,16 +29,7 @@ UncssFilter.prototype.targetExtension = 'css';
 
 UncssFilter.prototype.processString = function (str) {
 	this.options.raw = str;
-
-	return new RSVP.Promise(function(resolve, reject) {
-		uncss(this.html, this.options, function (err, data) {
-			if (err) {
-				return reject(err);
-			}
-
-			resolve(data);
-		});
-	}.bind(this));
+	return pify(uncss)(this.html, this.options);
 };
 
 module.exports = UncssFilter;
