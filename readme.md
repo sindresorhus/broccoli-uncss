@@ -15,14 +15,14 @@ $ npm install --save-dev broccoli-uncss
 ## Usage
 
 ```js
-const uncss = require('broccoli-uncss');
-tree = uncss(tree, {html: ['index.html']});
+const UnCSS = require('broccoli-uncss');
+tree = new UnCSS(tree, {html: ['index.html']});
 ```
 
 
 ## API
 
-### uncss(tree, [options])
+### UnCSS(tree, [options])
 
 #### options
 
