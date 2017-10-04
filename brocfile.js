@@ -1,2 +1,4 @@
 'use strict';
-module.exports = require('.')('fixture', {html: ['./fixture/fixture.html']});
+const UnCSS = require('.');
+
+module.exports = new UnCSS('fixture', {html: ['./fixture/fixture.html']});
