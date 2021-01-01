@@ -1,4 +1,4 @@
-# [broccoli](https://github.com/joliss/broccoli)-uncss [![Build Status](https://travis-ci.org/sindresorhus/broccoli-uncss.svg?branch=master)](https://travis-ci.org/sindresorhus/broccoli-uncss)
+# [broccoli](https://github.com/joliss/broccoli)-uncss
 
 > Remove unused CSS with [UnCSS](https://github.com/giakki/uncss)
 
